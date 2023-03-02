@@ -3,31 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
-    <title>Scroll -KhanMates</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider -KhanMates</title>
 </head>
 <body>
 
+
     <div class="container">
-        <div class="slides slides1">
-            <img src="./images/pic-1.png" alt="">
-            <h2>I'm a product Designer.</h2>
-        </div>
-         <div class="slides slides2">
-            <img src="./images/pic-2.png" alt="">
-            <h2>I'm a developer of mobile and web application.</h2>
-        </div>
-         <div class="slides slides3">
-            <img src="./images/pic-3.png" alt="">
-            <h2>I'm live in Pakistan.</h2>
+        <div class="tabs">
+            <input type="radio" id="web" name="slider" checked>
+            <input type="radio" id="graphics" name="slider">
+            <input type="radio" id="photography" name="slider">
+            <div class="buttons">
+                <label for="web"></label>
+                <label for="graphics"></label>
+                <label for="photography"></label>
+            </div>
+            <div class="content">
+                <div class="box web">
+                    <div class="contentBx">
+                        <ion-icon name="earth-outline"></ion-icon>
+                        <h2>Web Development</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ullam laudantium in deserunt cum sapiente obcaecati vitae officiis quasi ipsam.</p>
+                        <button>Lean More</button>
+                    </div>
+                </div>
+                <div class="box graphics">
+                    <div class="contentBx">
+                        <ion-icon name="image-outline"></ion-icon>
+                        <h2>Graphics desginer</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ullam laudantium in deserunt cum sapiente obcaecati vitae officiis quasi ipsam.</p>
+                        <button>Lean More</button>
+                    </div>
+                </div>
+                <div class="box photography">
+                    <div class="contentBx">
+                        <ion-icon name="camera-outline"></ion-icon>
+                        <h2>Photography</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ullam laudantium in deserunt cum sapiente obcaecati vitae officiis quasi ipsam.</p>
+                        <button>Lean More</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-
+    
 
 
 
     <script src="index.js"></script>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
 </body>
 </html>
